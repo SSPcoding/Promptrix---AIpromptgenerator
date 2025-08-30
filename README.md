@@ -16,7 +16,7 @@ A **web-based Streamlit application** for generating structured AI prompts with 
 ---
 
 ## 🖥️ Demo  
-👉 [![Live Demo](https://img.shields.io/badge/Live%20Now-Streamlit-brightgreen?style=for-the-badge&logo=streamlit)](https://your-app-name.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Now-Streamlit-brightgreen?style=for-the-badge&logo=streamlit)](https://promptrixai.streamlit.app/)
 
 ---
 
