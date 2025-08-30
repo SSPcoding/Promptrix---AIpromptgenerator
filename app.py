@@ -105,8 +105,7 @@ with tab1:
             st.markdown("### ✨ Optimized Prompt")
             st.markdown(
                 f"""
-                    <div style='padding:15px;border:1px solid #ddd;border-radius:10px;
-                    background-color:transparent;color:white;font-size:16px;white-space:pre-wrap;'>
+                <div class="prompt-output">
                     {st.session_state.latest_prompt}
                 """,
                 unsafe_allow_html=True
@@ -132,7 +131,7 @@ with tab2:
             st.markdown("### ✨ Improved Prompt")
             st.markdown(
                 f"""
-                    <div style='padding:15px;border:1px solid #ddd;border-radius:10px;
+                    <div class="prompt-output" style='padding:15px;border:1px solid #ddd;border-radius:10px;
                     background-color:transparent;color:white;font-size:16px;white-space:pre-wrap;'>
                     {st.session_state.latest_prompt}
                 """,
@@ -151,7 +150,7 @@ with tab3:
         for idx, p in enumerate(reversed(st.session_state.all_prompts[-5:]), 1):
             st.markdown(
                 f"""
-                    <div style='padding:15px;margin-bottom:10px;border:1px solid #ddd;
+                    <div class="prompt-output" style='padding:15px;margin-bottom:10px;border:1px solid #ddd;
                     border-radius:10px;background-color:transparent;color:white;
                     font-size:16px;white-space:pre-wrap;'>
                     {p}
