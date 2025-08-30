@@ -46,3 +46,15 @@ You are an Expert biology teacher. Your task is to Explain photosynthesis.
 The target audience is High school students.  
 Present the information in Short numbered list format.  
 Please ensure you Use beginner-friendly words.  
+
+
+## ⚙️ Installation & Setup
+
+### 🔧 Prerequisites
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Streamlit](https://streamlit.io/)
+- pip install -r requirements.txt
+
+### 📥 Clone the Repository
+git clone https://github.com/SSPcoding/ai-prompt-generator.git
+cd ai-prompt-generator
