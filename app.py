@@ -11,7 +11,7 @@ import google.generativeai as genai
 # 🔐 Load API Key
 # ========================
 load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
 
 if not API_KEY:
     st.error("❌ API Key not found. Please set GEMINI_API_KEY in your .env or Streamlit Secrets.")
@@ -59,7 +59,7 @@ def copy_to_clipboard(text, label="📋 Copy Prompt", key="default"):
 # ========================
 # 🎨 Streamlit UI
 # ========================
-st.set_page_config(page_title="AI Prompt Generator", page_icon="🤖")
+st.set_page_config(page_title="Promptrix", page_icon="🤖")
 navbar()
 st.markdown("""<p style='font-size:22px; color:#E72929;'>🤖 AI Prompt Generator</p>""", unsafe_allow_html=True)
 st.markdown("""<p style='font-size:22px; font-style: italic;'>Generate, refine, and preview optimized prompts for AI models.</p>""", unsafe_allow_html=True)
