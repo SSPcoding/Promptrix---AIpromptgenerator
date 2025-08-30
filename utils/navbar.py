@@ -41,7 +41,7 @@ def navbar():
             <style>
                 .stApp {
                     background-color: #EEE6CA !important;
-                    color: #E4003A !important;
+                    color: black !important;
                 }
                 .stTextInput label, .stTextArea label, .stSelectbox label {
                     color: black !important;
