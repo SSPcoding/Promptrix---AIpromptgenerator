@@ -1,0 +1,26 @@
+# ===== SECRETS =====
+.env
+.streamlit/secrets.toml
+
+# ===== PYTHON BUILD FILES =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pyo
+*.pyd
+*.pdb
+.Python
+
+# ===== ENVIRONMENTS =====
+.venv/
+venv/
+env/
+
+# ===== OS / EDITOR JUNK =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== NOTEBOOKS =====
+.ipynb_checkpoints/
