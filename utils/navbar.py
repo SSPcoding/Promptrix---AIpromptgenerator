@@ -33,32 +33,32 @@ def navbar():
         st.markdown(
             """
             <style>
-                /* App background + base text */
-                [data-testid="stAppViewContainer"]{
-                    background-color:#021526 !important;
+                /* App background */
+                [data-testid="stAppViewContainer"] {
+                    background-color: #021526 !important;
                 }
-                /* Make all markdown text white */
-                [data-testid="stMarkdownContainer"] *{
-                    color:#ffffff !important;
+                /* Force all markdown/text to white */
+                [data-testid="stMarkdownContainer"] * {
+                    color: #ffffff !important;
                 }
-                /* Labels for inputs */
-                .stTextInput label, .stTextArea label, .stSelectbox label{
-                    color:#ffffff !important;
+                /* Form labels */
+                .stTextInput label, .stTextArea label, .stSelectbox label {
+                    color: #ffffff !important;
                 }
-                /* Optional: tabs */
-                .stTabs [data-baseweb="tab"]{
-                    color:#ffffff !important;
-                    font-weight:bold;
+                /* Tabs */
+                .stTabs [data-baseweb="tab"] {
+                    color: #ffffff !important;
+                    font-weight: bold;
                 }
-                /* Your custom output box */
-                .prompt-output{
-                    padding:15px;
-                    border:1px solid #ddd;
-                    border-radius:10px;
-                    background-color:transparent;
-                    color:#ffffff !important;
-                    font-size:16px;
-                    white-space:pre-wrap;
+                /* Prompt output box */
+                .prompt-output {
+                    padding: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: #ffffff !important;
+                    font-size: 16px;
+                    white-space: pre-wrap;
                 }
             </style>
             """,
@@ -69,31 +69,31 @@ def navbar():
             """
             <style>
                 /* App background */
-                [data-testid="stAppViewContainer"]{
-                    background-color:#EEE6CA !important;
+                [data-testid="stAppViewContainer"] {
+                    background-color: #EEE6CA !important;
                 }
-                /* Make all markdown text RED (headings, paragraphs, etc.) */
-                [data-testid="stMarkdownContainer"] *{
-                    color:#ff0000 !important;
+                /* Force all markdown/text to red */
+                [data-testid="stMarkdownContainer"] * {
+                    color: #ff0000 !important;
                 }
-                /* Keep form labels black for readability */
-                .stTextInput label, .stTextArea label, .stSelectbox label{
-                    color:#000000 !important;
+                /* Form labels black */
+                .stTextInput label, .stTextArea label, .stSelectbox label {
+                    color: #000000 !important;
                 }
-                /* Tabs styling */
-                .stTabs [data-baseweb="tab"]{
-                    color:#000000 !important;
-                    font-weight:bold;
+                /* Tabs */
+                .stTabs [data-baseweb="tab"] {
+                    color: #000000 !important;
+                    font-weight: bold;
                 }
-                /* Your custom output box */
-                .prompt-output{
-                    padding:15px;
-                    border:1px solid #555;
-                    border-radius:10px;
-                    background-color:transparent;
-                    color:#000000 !important;
-                    font-size:16px;
-                    white-space:pre-wrap;
+                /* Prompt output box */
+                .prompt-output {
+                    padding: 15px;
+                    border: 1px solid #555;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: #000000 !important;
+                    font-size: 16px;
+                    white-space: pre-wrap;
                 }
             </style>
             """,
