@@ -33,21 +33,32 @@ def navbar():
         st.markdown(
             """
             <style>
-                .stApp {
-                    background-color: #021526 !important;
-                    color: white !important;
+                /* App background + base text */
+                [data-testid="stAppViewContainer"]{
+                    background-color:#021526 !important;
                 }
-                .stTextInput label, .stTextArea label, .stSelectbox label {
-                    color: white !important;
+                /* Make all markdown text white */
+                [data-testid="stMarkdownContainer"] *{
+                    color:#ffffff !important;
                 }
-                .prompt-output {
+                /* Labels for inputs */
+                .stTextInput label, .stTextArea label, .stSelectbox label{
+                    color:#ffffff !important;
+                }
+                /* Optional: tabs */
+                .stTabs [data-baseweb="tab"]{
+                    color:#ffffff !important;
+                    font-weight:bold;
+                }
+                /* Your custom output box */
+                .prompt-output{
                     padding:15px;
                     border:1px solid #ddd;
                     border-radius:10px;
-                    background-color: transparent;
-                    color: white !important;
+                    background-color:transparent;
+                    color:#ffffff !important;
                     font-size:16px;
-                    white-space: pre-wrap;
+                    white-space:pre-wrap;
                 }
             </style>
             """,
@@ -57,25 +68,32 @@ def navbar():
         st.markdown(
             """
             <style>
-                .stApp {
-                    background-color: #EEE6CA !important;
-                    color: red !important;
+                /* App background */
+                [data-testid="stAppViewContainer"]{
+                    background-color:#EEE6CA !important;
                 }
-                .stTextInput label, .stTextArea label, .stSelectbox label {
-                    color: black !important;
+                /* Make all markdown text RED (headings, paragraphs, etc.) */
+                [data-testid="stMarkdownContainer"] *{
+                    color:#ff0000 !important;
                 }
-                .stTabs [data-baseweb="tab"] {
-                    color: black;            
-                    font-weight: bold;
+                /* Keep form labels black for readability */
+                .stTextInput label, .stTextArea label, .stSelectbox label{
+                    color:#000000 !important;
                 }
-                .prompt-output {
+                /* Tabs styling */
+                .stTabs [data-baseweb="tab"]{
+                    color:#000000 !important;
+                    font-weight:bold;
+                }
+                /* Your custom output box */
+                .prompt-output{
                     padding:15px;
                     border:1px solid #555;
                     border-radius:10px;
-                    background-color: transparent;
-                    color: black !important;
+                    background-color:transparent;
+                    color:#000000 !important;
                     font-size:16px;
-                    white-space: pre-wrap;
+                    white-space:pre-wrap;
                 }
             </style>
             """,
